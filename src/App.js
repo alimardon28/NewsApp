@@ -71,7 +71,7 @@ useEffect(() => {
                   <li><span className='fw-bold'>Section Name:</span>{section_name}</li>
                   <li><span className='fw-bold'>Word Count:</span>{word_count}</li>
                </ul>
-               <a href={web_url} target="_blank" className='underline'>Web Resource</a>
+               <a href={web_url} rel="noreferrer" target="_blank" className='underline'>Web Resource</a>
              </article>
          )
        })}
