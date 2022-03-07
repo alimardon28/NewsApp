@@ -8,7 +8,7 @@ const App = () => {
 
    const [articles , setArticles] = useState([]);
    const [term , setTerm] = useState('election');
-   const [isLoading , setIsLoading] = useState(true)
+   const [isLoading , setIsLoading] = useState(true);
 
 
 
@@ -20,7 +20,6 @@ useEffect(() => {
         `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${term}&api-key=${API_KEY}`
         )
       const articles = await res.json()
-      console.log(articles.response.docs)
       setArticles(articles.response.docs)
       setIsLoading(false)
     }catch (error){
